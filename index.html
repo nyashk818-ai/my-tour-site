@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Туры за 100 рублей комиссии!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .excursion-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .price {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .commission {
+            background: #FFEB3B;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .guide-form {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 ТурАгрегатор</h1>
+        <h2>Комиссия всего 100 рублей вместо 20%!</h2>
+        <div class="commission">Фиксированно 100₽ за любой заказ</div>
+    </div>
+
+    <h3>Наши экскурсии:</h3>
+    
+    <!-- Экскурсия 1 -->
+    <div class="excursion-card">
+        <h3>🏛️ Обзорная по Москве</h3>
+        <p>Увидите Красную площадь, Кремль и самые красивые места столицы</p>
+        <p>⏱ 3 часа | 🚶 Пешая | 👥 До 15 человек</p>
+        <div class="price">2000 ₽</div>
+        <button>Забронировать</button>
+    </div>
+
+    <!-- Экскурсия 2 -->
+    <div class="excursion-card">
+        <h3>🍷 Гастрономический тур</h3>
+        <p>Попробуете лучшие блюда русской кухни в исторических ресторанах</p>
+        <p>⏱ 4 часа | 🚗 На транспорте | 👥 До 8 человек</p>
+        <div class="price">3500 ₽</div>
+        <button>Забронировать</button>
+    </div>
+
+    <!-- Форма для гидов -->
+    <div class="guide-form">
+        <h3>🎯 Для гидов:</h3>
+        <p><strong>Размещайте экскурсии с комиссией 100₽ вместо 20%!</strong></p>
+        
+        <form>
+            <p><input type="text" placeholder="Ваше имя" style="padding: 8px; width: 200px;"></p>
+            <p><input type="tel" placeholder="Телефон" style="padding: 8px; width: 200px;"></p>
+            <p><input type="email" placeholder="Email" style="padding: 8px; width: 200px;"></p>
+            <button type="button">Стать гидом</button>
+        </form>
+    </div>
+
+    <script>
+        // Простая логика для кнопок
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.textContent === 'Забронировать') {
+                    alert('Пока заявки обрабатываются вручную! Мы вам перезвоним 📞');
+                } else if (this.textContent === 'Стать гидом') {
+                    alert('Отлично! Мы свяжемся с вами в течение дня 🎉');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
